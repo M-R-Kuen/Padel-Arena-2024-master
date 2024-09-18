@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+} */
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 190, 241, 100;
+    --background-end-rgb: 29, 78, 215;
+    /* --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0; */
+/* }
+} */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@font-face {
+  font-family: "sfBold";
+  src: url("../../public/fonts/SFPRODISPLAYBOLD.OTF");
+}
+
+@font-face {
+  font-family: "sfRegular";
+  src: url("../../public/fonts/SFPRODISPLAYREGULAR.OTF");
+}
+@font-face {
+  font-family: "sfMedium";
+  src: url("../../public/fonts/SFPRODISPLAYMEDIUM.OTF");
+}
+@font-face {
+  font-family: "radhiumz";
+  src: url("../../public/fonts/NCS\ Radhiumz.ttf");
+}
+
+.radhiumz {
+  font-family: "radhiumz";
+}
+
+.sfBold {
+  font-family: "sfBold";
+}
+
+.sfRegular {
+  font-family: "sfRegular";
+}
+
+.sfMedium {
+  font-family: "sfMedium";
+}
+
+.bg-image {
+  background-image: url("../../public/images/imageBackground.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.swal2-popup {
+  background-color: #ffffff; /* Fondo blanco */
+  font-family: sfRegular;
+  color: #000000;
+}
+
+.swal2-confirm {
+  background-color: #bef164; /* Cambia este color por el que prefieras */
+  color: #000000; /* Color del texto */
+  border: none; /* Elimina el borde si es necesario */
+  font-family: radhiumz;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+.swal2-confirm:hover {
+  background-color: #1d4ed7; /* Color en hover */
+  color: #ffffff;
+}
+
+.swal2-cancel {
+  background-color: #000000; /* Cambia este color por el que prefieras */
+  color: #ffffff; /* Color del texto */
+  border: none; /* Elimina el borde si es necesario */
+  font-family: radhiumz;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+.swal2-cancel:hover {
+  background-color: #d71d1d; /* Color en hover */
+  color: #ffffff;
+}
+
+.no-backdrop-filter,
+.no-backdrop-filter::before,
+.no-backdrop-filter::after {
+  --tw-backdrop-blur: none !important;
+  --tw-backdrop-brightness: none !important;
+  --tw-backdrop-contrast: none !important;
+  --tw-backdrop-grayscale: none !important;
+  --tw-backdrop-hue-rotate: none !important;
+  --tw-backdrop-invert: none !important;
+  --tw-backdrop-opacity: none !important;
+  --tw-backdrop-saturate: none !important;
+  --tw-backdrop-sepia: none !important;
+  backdrop-filter: none !important;
+}
