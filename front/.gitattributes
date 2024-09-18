@@ -1,0 +1,11 @@
+# Forzar que los archivos .js sean reconocidos como Javascript
+*.js linguist-language=JavaScript
+
+# Forzar que los archivos .tsx sean reconocidos como TypeScript (en caso de usarlos)
+*.tsx linguist-language=TypeScript
+
+# Reconocer los archivos relacionados con Next.js como JavaScript/React
+*.jsx linguist-language=JavaScript
+
+# Reconocer archivos de estilo como CSS
+*.css linguist-language=CSS
